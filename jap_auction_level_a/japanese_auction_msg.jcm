@@ -12,25 +12,21 @@
     <DATE>
 */
 
-/* Critério para análise
- * - tempo de execução
- * - curva de desistência
- * - iterações
+/* Critï¿½rio para anï¿½lise
+ * - tempo de execuï¿½ï¿½o
+ * - curva de desistï¿½ncia
+ * - iteraï¿½ï¿½es
  * - quantidade de mensagens
- * - Percentual de desistência por preço e intenção de compra.
+ * - Percentual de desistï¿½ncia por preï¿½o e intenï¿½ï¿½o de compra.
  * */
 
 mas japanese_auction_msg {
 
-	agent alice : buyer.asl
-    agent david : buyer.asl
+	agent buyer : buyer.asl	{
+		instances:  200
+	}   
     
 
-    agent bob : auctioneer.asl
-    
-   
-
-    
-
+    agent auctioneer : auctioneer.asl
 }
 
