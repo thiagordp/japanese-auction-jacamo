@@ -30,53 +30,58 @@ iteracao(0).
 
 +service(S,V) 
 	:
-	.findall(A, desiste(service(_,_))[source(A)], L) &
+	.findall(b(V,A),bidok(Service,A),L) &
+	.findall(A,bidok(Service,A),LA) &
 	iteracao(N)
 	<- 	
 	.print("Nova rodada do leilão do serviço ", S, " por R$", V);
-	.print("Disistentes: ", L);
 	.print("Iteracao ", N+1);
 	-+iteracao(N+1);
 	.broadcast(tell, service(S,V));		
-	.wait(100);		 
+	.print("Broadcasting");
+	.wait(10000);		 
 	//.at("now + 1 seconds", {+!decide(service(S, V))}).
 	!decide(service(S, V)).
 					 
 				
 +!decide(Service)
 	: Service = service(S, V) &
-	.findall(b(V,A),bidok(Service,A),L) &
-	 .length(L,X) &
+	 .findall(A,bidok(Service,A),LA) &
+	 .length(LA,X) &
 	  X > 1 &
-	 Service = service(S, V)	  
-    <-  +service(S, V + 1).
+	 Service = service(S, V) & 
+	 iteracao(N)
+    <-  
+	.print("Presentes: ", LA);
+    +service(S, V + 1).
   
        
 +!decide(Service)
 	: Service = service(S, V) &
 	  .findall(b(V,A),bidok(Service,A),[b(V,W)| L]) &
-	  .findall(Ag, desiste(service(_,_))[source(Ag)], D) &
 	  .length(L,X) &
 	  iteracao(N) &
 	  X == 0	  
     <- .print("Vencedor para ", Service, " é ",W," com ", V);
-       .print("Desistentes: ", D);
        .print("Iteracoes: ", N);
+		.print("Presentes: [", W, "]");
+		.print("Broadcasting winner");
        .broadcast(tell, winner(Service,W,V));
        !finish_time.
 
 
 +!decide(Service)
-	: Service = service(S, V) &
-	  .findall(Ag, desiste(service(_,_))[source(Ag)], D) &
-	  iteracao(N) 
-	 <-.print("Desistentes: ", D);
+	 <-
+	 .print("Presentes: []");
 	 .print("Leilao encerrado sem ganhador").
 	        
 +bid(Service)[source(A)]
-	: desiste(Service,_)[source(A)] &
-	  Service = service(_, V)
-	<- .send(A, tell, reject(Service, V)).
+	:
+	 Service = service(S, V) &
+	 desiste(service(S, _))[source(A)]
+	 
+	<- .send(A, tell, reject(Service, V));
+	.print("Tell Reject").
 
 +bid(Service)[source(A)]
 	: Service = service(_, V)

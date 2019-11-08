@@ -2,7 +2,8 @@
 
 /* Initial beliefs and rules */
 
-rand(R) :- a(X).
+power(X,Y,Z) :- Z = X**Y.
+rand_exp(R) :- P=math.e**(2*math.random) & R = P / (math.e**2).
 
 /* Initial goals */
 
@@ -18,8 +19,8 @@ rand(R) :- a(X).
  */
 +service(S, V)[source(A)]
 	: desiste(service(S, _)) &
-	  X = math.random &
-	  X < 0.95 						/* 5% de chance de querer voltar ao leilão (mas o leiloeiro não vai deixar) */
+	  R = math.random &
+	  R > 0.95 						/* 5% de chance (não uniform)de querer voltar ao leilão (mas o leiloeiro não vai deixar) */
 	<- .print("Recebi oferta de ", S, ", mas já desisti.").
 
 /*
@@ -32,10 +33,12 @@ rand(R) :- a(X).
  */
 +service(S,V)[source(A)]
 	: budget(B) &  
-	  I = math.min(math.random * 2, 1) & 
+	  rand_exp(R) &
+	  I = (1 - R) &
 	  V <= B * I
 	  <- .send(A, tell, bid(service(S,V)));
-	 	.my_name(X);
+	  	.print("Tell");
+	 	.my_name(X);	 	
 	 	.print( X, " continua no leilao");
 	 	+propose(S, V, I).
 
@@ -43,8 +46,10 @@ rand(R) :- a(X).
  * Em último caso, desiste do leilão
  */
 +service(S,V)[source(A)]
+	 	:rand_exp(R)
 	 <- .send(A, tell, desiste(service(S, V)));
 	 	.my_name(Self);
+	  	.print("Tell");
 	 	.send(Self, tell, desiste(service(S, V)));
 	 	.print("Desistindo de ", S, " por ", V).
 	 	

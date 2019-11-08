@@ -13,9 +13,9 @@
 */
 
 /* Crit�rio para an�lise
- * - tempo de execu��o
- * - curva de desist�ncia
- * - itera��es
+ * X tempo de execu��o
+ * X curva de desist�ncia
+ * X itera��es
  * - quantidade de mensagens
  * - Percentual de desist�ncia por pre�o e inten��o de compra.
  * */
@@ -23,7 +23,7 @@
 mas japanese_auction_msg {
 
 	agent buyer : buyer.asl	{
-		instances:  200
+		instances:  1000
 	}   
     
 
