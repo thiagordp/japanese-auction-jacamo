@@ -1,0 +1,40 @@
+/*
+    auction_env
+    ---------------------------
+
+    JaCaMo Application File
+
+    This file defines the initial state of the MAS (initial agents, environment, organisation, ....)
+
+    (see jacamo/doc/jcm.html for more information about what can be defined in this file)
+
+    JaCaMo <VERSION>
+    <DATE>
+*/
+
+mas auction_env {
+
+    agent bob     : auctioneer.asl {
+    	goals: start(a1,"flight_ticket(paris,athens,15/12/2015)")
+               //start(a2,"flight_ticket(athens,paris,18/12/2015)")
+    }
+
+    agent alice   : buyer.asl
+    agent maria   : buyer.asl
+    agent francois: buyer.asl
+    agent giacomo : buyer.asl
+
+    workspace market_place {
+		agents: bob, alice, maria, francois, giacomo // these agents will join the workspace
+ 
+         /* // the artifact is now created by bob on demand (one for each start goal)
+	        artifact auction1 : auction_env.AuctionArtifact() {
+            focused-by: bob, alice, maria, francois, giacomo
+         }
+        */
+    }
+
+    
+
+}
+
