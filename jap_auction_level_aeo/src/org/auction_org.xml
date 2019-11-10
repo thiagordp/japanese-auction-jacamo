@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="http://moise.sourceforge.net/xml/os.xsl" type="text/xsl" ?>
+
+<organisational-specification
+    id="auction_org"
+    os-version="0.8"
+
+    xmlns='http://moise.sourceforge.net/os'
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:schemaLocation='http://moise.sourceforge.net/os
+                        http://moise.sourceforge.net/xml/os.xsd' >
+
+<structural-specification>
+
+<group-specification id="auctionGroup">
+    <roles>
+        <role id="auctioneer" min="1" max="1"/>
+        <role id="buyer" min="0" max="1000"/>
+    </roles>
+</group-specification>
+</structural-specification>
+
+<functional-specification>
+    <scheme id="doAuction">
+        <goal id="auction">
+        <argument id = "Id" />
+        <argument id = "Service" />
+            <plan operator="sequence">
+                <goal id="start" />
+                <goal id = "bid"/>
+                <goal id = "decide"/>
+            </plan>
+        </goal>
+
+        <mission id="mAuctioneer" min="1" max="1">
+            <goal id="start"/>
+            <goal id="decide"/>
+        </mission>
+        <mission id="mBuyer" min="1">
+            <goal id="bid"/>
+        </mission>
+    </scheme>
+</functional-specification>
+
+<normative-specification>
+	<norm id="n1" type="permission" role="auctioneer" mission="mAuctioneer"/>
+    <norm id="n2" type="obligation" role="buyer" mission="mBuyer"/>
+    <!--
+       setup of Moise properties (e.g. role compatibility) handling (regimented or not)
+
+       when value = "fail", the platform ensures that the property is not broken (the property is thus regiment)
+       when value = "prohibition", violations are produced when the property is not followed by the agents
+       when value = "ignore", no norm is produced 
+
+       possible properties are defined in https://github.com/moise-lang/moise/blob/master/src/main/java/ora4mas/nopl/tools/os2nopl.java
+
+       some examples follow
+    -->
+    <!-- properties>
+        <property id="default_management"  value="fail" />
+        <property id="role_compatibility"  value="prohibition" />
+        <property id="mission_cardinality" value="prohibition" />
+    </properties-->
+
+    <!-- the norms of the application -->
+</normative-specification>
+
+</organisational-specification>
