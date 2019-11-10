@@ -1,0 +1,224 @@
+Launching japanese_auction_env
+reading from file /home/trdp/eclipse-jee-ws/japanese_auction_env/japanese_auction_env.jcm ...
+file /home/trdp/eclipse-jee-ws/japanese_auction_env/japanese_auction_env.jcm parsed successfully!
+
+Executing /usr/local/java/jdk-13.0.1/bin/java -classpath /home/trdp/jacamo-0.8/libs/ant-launcher-1.10.5.jar org.apache.tools.ant.launch.Launcher -e -f bin/auction_env.xml run
+Buildfile: /home/trdp/eclipse-jee-ws/japanese_auction_env/bin/auction_env.xml
+
+init:
+
+user-init:
+
+compile:
+Compiling 1 source file to /home/trdp/eclipse-jee-ws/japanese_auction_env/bin/classes
+
+run:
+Running project auction_env
+CArtAgO Http Server running on http://192.168.0.25:3280
+Jason Http Server running on http://192.168.0.25:3281
+[Cartago] Workspace market_place created.
+[giacomo3] joinned workspace market_place
+[bob] joinned workspace market_place
+[giacomo4] joinned workspace market_place
+[giacomo10] joinned workspace market_place
+[giacomo6] joinned workspace market_place
+[giacomo5] joinned workspace market_place
+[giacomo1] joinned workspace market_place
+[bob] Artefato Auction criado para quadro(monalisa)
+[giacomo9] joinned workspace market_place
+[giacomo8] joinned workspace market_place
+[giacomo7] joinned workspace market_place
+[giacomo2] joinned workspace market_place
+[bob] Broadcast para focar no artefato cobj_4
+[giacomo2] Biding task!
+[giacomo2] Biding!
+[giacomo6] Biding task!
+[giacomo6] Giving up!
+[giacomo4] Biding task!
+[giacomo4] Biding!
+[giacomo3] Biding task!
+[giacomo3] Biding!
+[giacomo7] Biding task!
+[giacomo7] Biding!
+[giacomo9] Biding task!
+[giacomo9] Biding!
+[giacomo5] Biding task!
+[giacomo5] Biding!
+[giacomo1] Biding task!
+[giacomo1] Biding!
+[giacomo8] Biding task!
+[giacomo8] Biding!
+[giacomo10] Biding task!
+[giacomo10] Biding!
+Received bid  from giacomo2 for quadro(monalisa)
+Received bid  from giacomo5 for quadro(monalisa)
+Received bid  from giacomo5 for quadro(monalisa)
+Received bid  from giacomo3 for quadro(monalisa)
+Received bid  from giacomo2 for quadro(monalisa)
+Received bid  from giacomo3 for quadro(monalisa)
+Received bid  from giacomo6 for quadro(monalisa)
+Received bid  from giacomo7 for quadro(monalisa)
+Received bid  from giacomo7 for quadro(monalisa)
+Received bid  from giacomo1 for quadro(monalisa)
+Received bid  from giacomo1 for quadro(monalisa)
+Received bid  from giacomo9 for quadro(monalisa)
+Received bid  from giacomo4 for quadro(monalisa)
+Received bid  from giacomo9 for quadro(monalisa)
+Received bid  from giacomo4 for quadro(monalisa)
+Received bid  from giacomo10 for quadro(monalisa)
+Received bid  from giacomo8 for quadro(monalisa)
+Received bid  from giacomo8 for quadro(monalisa)
+Received bid  from giacomo10 for quadro(monalisa)
+[bob] Presentes: 9
+[bob] Updating price!
+[giacomo1] Biding!
+[giacomo7] Biding!
+[giacomo2] Biding!
+[giacomo8] Biding!
+[giacomo6] Could not finish intention: intention 54:
+    +price(95.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=95.25421463872121, I=0.7436493236312459, B=249.24133422898421, R=0.2563506763687541, AId=cobj_4}
+	Trigger: +price(95.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo5] Biding!
+[giacomo4] Biding!
+[giacomo10] Giving up!
+[giacomo3] Giving up!
+[giacomo9] Biding!
+Received bid  from giacomo5 for quadro(monalisa)
+Received bid  from giacomo2 for quadro(monalisa)
+Received bid  from giacomo7 for quadro(monalisa)
+Received bid  from giacomo4 for quadro(monalisa)
+Received bid  from giacomo8 for quadro(monalisa)
+Received bid  from giacomo9 for quadro(monalisa)
+Received bid  from giacomo1 for quadro(monalisa)
+[bob] Presentes: 7
+[bob] Updating price!
+Received bid  from giacomo1 for quadro(monalisa)
+Received bid  from giacomo2 for quadro(monalisa)
+Received bid  from giacomo9 for quadro(monalisa)
+[giacomo9] Biding!
+[giacomo7] Giving up!
+[giacomo1] Biding!
+[giacomo5] Giving up!
+[giacomo8] Giving up!
+[giacomo2] Biding!
+[giacomo6] Could not finish intention: intention 65:
+Received bid  from giacomo4 for quadro(monalisa)    +price(96.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=96.25421463872121, I=0.694993745843814, B=249.24133422898421, R=0.30500625415618593, AId=cobj_4}
+
+	Trigger: +price(96.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo3] Could not finish intention: intention 71:
+    +price(96.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=96.25421463872121, I=0.6302996518707891, B=428.2345221324532, R=0.36970034812921093, AId=cobj_4}
+	Trigger: +price(96.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo10] Could not finish intention: intention 67:
+    +price(96.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=96.25421463872121, I=0.4782186825258179, B=547.7528250007265, R=0.5217813174741821, AId=cobj_4}
+	Trigger: +price(96.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo4] Biding!
+Received bid  from giacomo2 for quadro(monalisa)
+Received bid  from giacomo1 for quadro(monalisa)
+Received bid  from giacomo9 for quadro(monalisa)
+Received bid  from giacomo4 for quadro(monalisa)
+[bob] Presentes: 4
+[bob] Updating price!
+[giacomo3] Could not finish intention: intention 76:
+    +price(97.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=97.25421463872121, I=0.7320695819279859, B=428.2345221324532, R=0.2679304180720141, AId=cobj_4}
+	Trigger: +price(97.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo2] Biding!
+[giacomo9] Biding!
+[giacomo7] Could not finish intention: intention 77:
+    +price(97.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=97.25421463872121, I=0.8368198826198303, B=184.58884824489093, R=0.16318011738016963, AId=cobj_4}
+	Trigger: +price(97.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo6] Could not finish intention: intention 82:
+    +price(97.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=97.25421463872121, I=0.7656543761583998, B=249.24133422898421, R=0.23434562384160015, AId=cobj_4}
+	Trigger: +price(97.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo10] Could not finish intention: intention 84:
+    +price(97.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=97.25421463872121, I=0.8502489174609664, B=547.7528250007265, R=0.14975108253903352, AId=cobj_4}
+	Trigger: +price(97.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo8] Giving up!
+[giacomo1] Biding!
+[giacomo4] Biding!
+[giacomo5] Could not finish intention: intention 85:
+    +price(97.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=97.25421463872121, I=0.2856233491734238, B=559.4690468990437, R=0.7143766508265762, AId=cobj_4}
+	Trigger: +price(97.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+Received bid  from giacomo2 for quadro(monalisa)
+Received bid  from giacomo1 for quadro(monalisa)
+Received bid  from giacomo4 for quadro(monalisa)
+[bob] Presentes: 4
+[bob] Updating price!
+[giacomo1] Biding!
+[giacomo10] Could not finish intention: intention 94:
+    +price(98.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=98.25421463872121, I=0.5813500789758934, B=547.7528250007265, R=0.4186499210241066, AId=cobj_4}
+	Trigger: +price(98.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo2] Biding!
+[giacomo3] Could not finish intention: intention 87:
+    +price(98.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=98.25421463872121, I=0.6255130263674544, B=428.2345221324532, R=0.37448697363254557, AId=cobj_4}
+	Trigger: +price(98.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo8] Could not finish intention: intention 88:
+    +price(98.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=98.25421463872121, I=0.856376672088132, B=316.0945027579951, R=0.14362332791186805, AId=cobj_4}
+	Trigger: +price(98.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo5] Could not finish intention: intention 92:
+    +price(98.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=98.25421463872121, I=0.7137037848207788, B=559.4690468990437, R=0.28629621517922127, AId=cobj_4}
+	Trigger: +price(98.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo7] Could not finish intention: intention 91:
+    +price(98.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=98.25421463872121, I=0.764744651955896, B=184.58884824489093, R=0.23525534804410392, AId=cobj_4}
+	Trigger: +price(98.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo9] Giving up!
+[giacomo6] Could not finish intention: intention 93:
+    +price(98.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=98.25421463872121, I=0.8545325711372754, B=249.24133422898421, R=0.1454674288627246, AId=cobj_4}
+	Trigger: +price(98.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo4] Biding!
+Received bid  from giacomo4 for quadro(monalisa)
+Received bid  from giacomo1 for quadro(monalisa)
+Received bid  from giacomo2 for quadro(monalisa)
+[giacomo8] Could not finish intention: intention 98:
+    +price(99.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=99.25421463872121, I=0.5328394076683662, B=316.0945027579951, R=0.4671605923316337, AId=cobj_4}
+	Trigger: +price(99.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo5] Giving up!
+[giacomo4] Biding!
+[bob] Presentes: 3
+[bob] Updating price!
+[giacomo3] Could not finish intention: intention 103:
+    +price(99.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=99.25421463872121, I=0.8008590126878563, B=428.2345221324532, R=0.19914098731214372, AId=cobj_4}
+	Trigger: +price(99.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo2] Biding!
+[giacomo10] Could not finish intention: intention 99:
+    +price(99.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=99.25421463872121, I=0.48459337202442043, B=547.7528250007265, R=0.5154066279755796, AId=cobj_4}
+	Trigger: +price(99.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo1] Biding!
+[giacomo7] Could not finish intention: intention 107:
+    +price(99.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=99.25421463872121, I=0.654570236283851, B=184.58884824489093, R=0.34542976371614903, AId=cobj_4}
+	Trigger: +price(99.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo6] Could not finish intention: intention 106:
+    +price(99.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=99.25421463872121, I=0.5788684497103813, B=249.24133422898421, R=0.42113155028961874, AId=cobj_4}
+	Trigger: +price(99.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo9] Could not finish intention: intention 104:
+    +price(99.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=99.25421463872121, I=0.8309945012421528, B=545.7303598154181, R=0.1690054987578472, AId=cobj_4}
+	Trigger: +price(99.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+Received bid  from giacomo2 for quadro(monalisa)
+[bob] Presentes: 3
+[bob] Updating price!
+[giacomo8] Could not finish intention: intention 112:
+    +price(100.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=100.25421463872121, I=0.4947788426049645, B=316.0945027579951, R=0.5052211573950355, AId=cobj_4}
+	Trigger: +price(100.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo7] Could not finish intention: intention 111:
+    +price(100.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=100.25421463872121, I=0.8064973355691649, B=184.58884824489093, R=0.19350266443083505, AId=cobj_4}
+	Trigger: +price(100.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo5] Could not finish intention: intention 110:
+    +price(100.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=100.25421463872121, I=0.8168779453730427, B=559.4690468990437, R=0.18312205462695727, AId=cobj_4}
+	Trigger: +price(100.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo9] Could not finish intention: intention 113:
+    +price(100.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=100.25421463872121, I=0.808349052218191, B=545.7303598154181, R=0.19165094778180905, AId=cobj_4}
+	Trigger: +price(100.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo10] Could not finish intention: intention 116:
+    +price(100.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=100.25421463872121, I=0.8091764867640754, B=547.7528250007265, R=0.1908235132359246, AId=cobj_4}
+	Trigger: +price(100.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo3] Could not finish intention: intention 115:
+    +price(100.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=100.25421463872121, I=0.752364140464156, B=428.2345221324532, R=0.24763585953584402, AId=cobj_4}
+	Trigger: +price(100.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo2] Biding!
+[giacomo6] Could not finish intention: intention 109:
+    +price(100.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)] <- ... bid[artifact_id(AId)]; .print("Biding!") / {P=100.25421463872121, I=0.5789011955604839, B=249.24133422898421, R=0.42109880443951603, AId=cobj_4}
+	Trigger: +price(100.25421463872121)[artifact_id(cobj_4),artifact_name(cobj_4,a1),code(bid[artifact_id(cobj_4)]),code_line(43),code_src("buyer.asl"),error(action_failed),error_msg("You can not bid for this auction, beacause you already gave up!"),percept_type(obs_prop),source(percept),workspace(cobj_4,market_place,cobj_2)]
+[giacomo1] Giving up!
+[giacomo4] Giving up!
+[bob] Presentes: 1
+[bob] Vencedor para quadro(monalisa) é giacomo2 com 100.25421463872121
+[giacomo2] I Won!
