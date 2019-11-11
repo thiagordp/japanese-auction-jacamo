@@ -44,7 +44,7 @@
 </functional-specification>
 
 <normative-specification>
-	<norm id="n1" type="permission" role="auctioneer" mission="mAuctioneer"/>
+	<norm id="n1" type="obligation" role="auctioneer" mission="mAuctioneer"/>
     <norm id="n2" type="obligation" role="buyer" mission="mBuyer"/>
     <!--
        setup of Moise properties (e.g. role compatibility) handling (regimented or not)

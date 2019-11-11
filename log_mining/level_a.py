@@ -12,7 +12,7 @@ PATH_IMG = "img/"
 
 def log_level_a():
 
-    print("-----------------------------------------")
+    print("####################################################")
     print("Level A")
     index = 0
     # [level, n, exp, iteracoes, tempo_exe, round(preco_final, 2), list_continua, qtd_msg]

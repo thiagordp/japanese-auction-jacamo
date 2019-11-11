@@ -1,9 +1,9 @@
-// Agent auctioneer in project auction_env
+// Agent auctioneer in project auction_aeo
 
 /* Initial beliefs and rules */
 
 /* Initial goals */
-!do_auction("a1","flight_ticket(paris,athens,date(15,12,2015))").
+!do_auction("a1","quadro(the_starry_night)").
 
 /* Plans */
 
@@ -12,6 +12,7 @@
    <- // creates a scheme to coordinate the auction
       .concat("sch_",Id,SchName);
       makeArtifact(SchName, "ora4mas.nopl.SchemeBoard",["src/org/auction_org.xml", doAuction],SchArtId);
+      .print("Criando artefato para ", SchName);
       debug(inspector_gui(on))[artifact_id(SchArtId)];
       setArgumentValue(auction,"Id",Id)[artifact_id(SchArtId)];
       setArgumentValue(auction,"Service",P)[artifact_id(SchArtId)];
@@ -44,10 +45,11 @@
 	  Sch::price(P)
    <- Sch::updatePrice(P+1);
    	  .at("now + 1 seconds", {+!decideAg(Sch)});
+   	  .print("Presentes: ", B)
    	  .print("Updating price!").
    	  
 +!decide[scheme(Sch)]
-   <- .print("Presentes: []");
+   <- .print("Presentes: 0");
 	  .print("Leilao encerrado sem ganhador").
 	  
 +!decide[scheme(Sch)]
@@ -61,7 +63,8 @@
 	  B > 1 &
 	  Sch::price(P)
    <- Sch::updatePrice(P+1);
-   	  .at("now + 5 seconds", {+!decideAg(Sch)});
+   	  .at("now + 20 seconds", {+!decideAg(Sch)});
+ 	  .print("Presentes: ", B);
    	  .print("Updating price!").
 
 +!decideAg(Sch)
@@ -69,13 +72,14 @@
    <- Sch::stop.
    	  
 +!decideAg(Sch)
-   <- .print("Presentes: []");
+   <- .print("Presentes: 0");
 	  .print("Leilao encerrado sem ganhador").
 
 
 +NS::winner(W) : W \== no_winner
    <- ?NS::task(S);
       ?NS::price(V);
+      .print("Presentes: 1");
       .print("Winner for ", S, " is ",W," with ", V).
       
 +oblUnfulfilled( obligation(Ag,_,done(Sch,bid,Ag),_ ) )[artifact_id(AId)]  // it is the case that a bid was not achieved

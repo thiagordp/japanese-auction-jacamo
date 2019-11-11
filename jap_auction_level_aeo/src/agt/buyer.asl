@@ -1,6 +1,7 @@
 // Agent participant in project auction_env
 
 /* Initial beliefs and rules */
+rand_exp(R) :- P=math.e**(2*math.random) & R = P / (math.e**2).
 
 /* Initial goals */
 
@@ -23,7 +24,8 @@
 	: running("yes")[artifact_id(AId)] &
 	  budget(B) &
 	  price(P)[artifact_id(AId)] &
-	  I = math.random*2 &
+  	  rand_exp(R) &
+	  I = (1 - R) &
 	  P <= B * I
    <- bid[artifact_id(AId)];
    	  .print("Biding bidAg!").
@@ -41,7 +43,8 @@
 	: running("yes")[artifact_id(AId)] &
 	  budget(B) &
 	  init(1) &
-	  I = math.random*2 &
+  	  rand_exp(R) &
+	  I = (1 - R) &
 	  P <= B * I
    <- bid[artifact_id(AId)];
    	  .print("Biding!").
